@@ -1,25 +1,133 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caccia al Tesoro - Pagina 1</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+     
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   
+       <!-- Site Metas -->
+      <title>Caccia al pandoro</title>  
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+  
+      <!-- Site Icons -->
+      <link rel="shortcut icon" href="#" type="image/x-icon" />
+      <link rel="apple-touch-icon" href="#" />
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Pogo Slider CSS -->
+      <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+      <link rel="stylesheet" href="css/style.css">    
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/custom.css">
+  
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  
+  <script src="js/script.js"></script>
 </head>
-<body class="christmas-theme">
-  <div class="question-container">
-    <h2>Domanda sulla stazione precedente</h2>
-    <input type="text" id="answer" placeholder="Inserisci la tua risposta">
-    <button onclick="checkAnswer()">Verifica risposta</button>
-  </div>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
 
-  <div class="video-container" id="video-container" style="display: none;">
-    <h3>Risposta corretta! Ecco il video successivo:</h3>
-    <video controls>
-      <source src="video/video_successivo.mp4" type="video/mp4">
-      Il tuo browser non supporta il tag video.
-    </video>
+
+
+    	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+
+  <div style="padding-top: 30px;">&nbsp;</div>
+  
+
+  <div id="wish" class="about-box question" style="padding-bottom: 0;">
+    <div class="about-a1">
+      <div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="row align-items-center about-main-info">
+        
+        <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+            <div class="full">
+                <img class="img-responsive" src="images/w1.png" alt="#" />
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h2>Domanda sulla stazione precedente</h2>
+          <p>A quanti gradi devi impostare il forno per cucinare un pandoro perfetto?</p>
+          <p>
+            <input type="text" id="answer" placeholder="Inserisci la tua risposta">
+            <button onclick="checkAnswer(170)">Verifica risposta</button>
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+      </div>
+    </div></div>
+
+
+
+
+
+  <div id="wish" class="about-box video-container" style="padding-bottom: 0; display: none;">
+		<div class="about-a1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-box">
+          <p>Congratulazioni! Hai trovato con successo l'ingrediente segreto per il nostro pandoro natalizio. La tua abilità e determinazione sono fondamentali per creare il pandoro più delizioso che il Natale abbia mai visto. Continua così, l'avventura continua!</p>
+          <img width="130" src="https://media.istockphoto.com/id/1314024818/it/vettoriale/sacchetto-di-farina-di-grano-vettore-illustrazione-isolata.jpg?s=612x612&w=0&k=20&c=D5TYwZ2GkDz2-QmIKk1GjQA9ZcDbaRLa8IWt6qPTBtg="/>
+          <h3>Farina 00: 60 grammi </h3>
+          <h2>Stazione 1: il calzolaio</h2>
+        </div>
+        <p>Risolvi l'indovinello e raggiungi la prossima stazione della caccia al tesoro. Sulla vetrina troverai un QR-Code che dovrai scansionare per accedere all'indizio successivo. Buona fortuna!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="row align-items-center about-main-info">
+          
+          <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+              <div class="full">
+                <video width="100%" controls>
+                  <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                  Il tuo browser non supporta il tag video.
+                </video>
+              </div>
+          </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <h3>Indovinello</h3>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
   </div>
 </body>
 </html>
