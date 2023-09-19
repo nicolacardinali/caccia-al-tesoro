@@ -1,11 +1,16 @@
+'use strict';
+
 function checkAnswer(answer) {
-    var userAnswer = document.getElementById('answer').value.toLowerCase();
-    // Esegui la logica per verificare la risposta
-    if (userAnswer == answer) {
-      document.querySelector('.video-container').style.display = 'block';
-      document.querySelector('.question').style.display = 'none';
-    } else {
-      alert('Risposta errata. Prova di nuovo!');
-    }
-  }
+  const userAnswer = document.getElementById('answer').value.toLowerCase();
   
+  // Execute logic to verify the answer
+  const videoContainer = document.querySelector('.video-container');
+  const questionElement = document.querySelector('.question');
+
+  if (userAnswer === answer) {
+    videoContainer.style.display = 'block';
+    questionElement.style.display = 'none';
+  } else {
+    alert('Risposta errata. Prova di nuovo!');
+  }
+}
